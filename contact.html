@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link href="assets/css/global.css" rel="stylesheet">
+
+    <link href="assets/css/index.css" rel="stylesheet">
+</head>
+<body>
+<header class="row shrink">
+    <div class="logo medium-3 show-for-medium columns"></div>
+    <div class="columns menu-button text-right">
+        <button onclick="openNav()">
+            <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+        </button>
+    </div>
+</header>
+<div class="mobile-menu overlay small-11">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Profiles</a></li>
+            <li><a href="#">Memberships</a></li>
+            <li><a href="#">Solutions</a></li>
+        </ul>
+        <div class="row align-bottom">
+            <ul class="bottom-menu">
+                <li><a href="#">SUPPORT</a></li>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="row">
+                <div class="small-8 column">User Info</div>
+                <div class="small-4 column"><i class="fa fa-cog fa-3x" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row banner-block shrink">
+    <div class="small-12">
+        <div class="banner"></div>
+    </div>
+</div>
+<div class="content">
+    <div class="row align-center about-text ">
+        <div class="small-10">
+            <div class="text-center membership-block">
+                <div class="spacer1"></div>
+                <h1 class="eight">contact us.</h1>
+                <div class="spacer1"></div>
+                <h2 class="second text-left">Send a message.</h2>
+                <form>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <label>
+                                <input type="text" placeholder="Your name">
+                            </label>
+                        </div>
+                        <div class="small-12 columns">
+                            <label>
+                                <input type="text" placeholder="Your phone">
+                            </label>
+                        </div>
+                        <div class="small-12 columns">
+                            <label>
+                                <input type="text" placeholder="your email">
+                            </label>
+                        </div>
+                        <div class="small-12 columns">
+                            <label>
+                                <select>
+                                    <option value="">Enquiry type</option>
+                                    <option value="starbuck">Starbuck</option>
+                                    <option value="hotdog">Hot Dog</option>
+                                    <option value="apollo">Apollo</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="small-12 columns">
+                            <label>
+                                <textarea placeholder="Comments"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <button type="button" class="warning button">Signup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="row hide-for-small-only">
+    <div class="medium-3 medium-offset-1">
+        <h4>OUR PRODUCTS.</h4>
+        <ul class="list-group">
+            <li><a href="#">d.key</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Insight</a></li>
+            <li><a href="#">Product Updates</a></li>
+        </ul>
+    </div>
+    <div class="medium-3">
+        <h4>MEMBERSHIPS.</h4>
+        <ul class="list-group">
+            <li><a href="#">Artists</a></li>
+            <li><a href="#">Collectors</a></li>
+            <li><a href="#">Galleries</a></li>
+            <li><a href="#">Art Dealers</a></li>
+        </ul>
+    </div>
+    <div class="medium-2">
+        <h4>CONTACT US.</h4>
+        <address>
+            <p>hello@dartkey.com</p>
+            <strong>PO Box 1096</strong><br>
+            Blackburn North, 3130 VIC<br>
+            Asutralia<br>
+        </address>
+    </div>
+    <div class="medium-2">
+        <ul class="social-icons start-sm">
+            <li>
+                <a href="#"><i class="fa fa-facebook fa-lg fa-fw" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-instagram fa-lg fa-fw" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-pinterest fa-lg fa-fw" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter fa-lg fa-fw" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script>
+  function openNav() {
+    $('.menu-button').removeClass('text-right').addClass('text-left');
+    $('.mobile-menu').css('width','85%');
+  }
+
+  function closeNav() {
+    $('.menu-button').removeClass('text-left').addClass('text-right');
+    $('.mobile-menu').css('width','0%');
+  }
+</script>
+</body>
+</html>

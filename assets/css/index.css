@@ -1,0 +1,176 @@
+/*
+    Flex Foundation Custom Styles
+    Mobile First Desgin
+*/
+
+header {
+    padding: .5rem 0rem;
+    background-color: #241346;
+}
+
+.menu-button button {
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.logo {
+    background-image: url("../images/dartkey-logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70% 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #F46DE4;
+}
+
+.mobile-nav {
+    height: 100%;
+}
+
+.mobile-nav ul li {
+    list-style: none;
+}
+
+button:focus {outline:0;}
+
+.banner {
+    height: 300px;
+    background-image: url(../images/banner-image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    border-bottom: 3px solid #73E7D2;
+    max-height: 100%;
+    background-origin: content-box;
+    background-position: center center;
+    background-attachment: initial;
+}
+
+@media print, screen and (min-width: 40em) {
+    .banner {
+        height: 500px;
+    }
+}
+@media print, screen and (min-width: 64em) {
+    .banner {
+        height: 600px;
+    }
+}
+
+.content {
+    min-height: 650px;
+}
+
+.about-text {
+    padding: 2rem 0 5rem 0;
+}
+
+.about-text p {
+    font-size: 16px;
+}
+
+.heading {
+    font-size: 50px;
+    font-family: FlisonProBook;
+}
+
+.heading b {
+    font-family: FilsonProBlack;
+}
+
+.dartkey-info-banner {
+    width: 300px;
+    height: 192px;
+    background-image: url(../images/dartkey-card.png);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border: 1px solid #ccc;
+    border-radius: 45px;
+    margin: 1rem auto 2rem auto;
+}
+
+
+
+/* Ends */
+
+
+
+/*nav ul {
+    display: flex;
+    color: #ffffff;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav.upper-nav {
+    margin-bottom: 0.8rem;
+}
+
+nav.upper-nav ul {
+    margin-right: .5rem;
+}
+
+nav.upper-nav li {
+    padding: 0 0.3rem;
+    font-size: 10px;
+}
+
+nav.main-nav li {
+    padding: 0 0.8rem;
+}
+
+.login-btn {
+    background-color: #D4B92E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 1.3rem;
+    font-weight: bold;
+    font-size: 13px;
+}*/
+
+
+
+footer {
+    background-color: #FFFFFF;
+    color: #000;
+    padding: 1rem 0 2rem 0;
+}
+
+footer ul {
+
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a{
+    color: #000000;
+    text-decoration: none;
+}
+
+footer ul.social-icons {
+    margin-top: 1rem;
+}
+
+footer ul.social-icons li {
+    display: inline-flex;
+}
+
+
