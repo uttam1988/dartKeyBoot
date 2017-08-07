@@ -18,8 +18,7 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70% 100%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
 }
 
 .overlay {
@@ -31,7 +30,7 @@ header {
     right: 0;
     overflow-x: hidden;
     transition: 0.5s;
-    background-color: #F46DE4;
+    background-color: #681087;
 }
 
 .mobile-nav {
@@ -40,6 +39,11 @@ header {
 
 .mobile-nav ul li {
     list-style: none;
+}
+
+.closebtn {
+    font-size: 34px;
+    padding: .2em 0;
 }
 
 button:focus {outline:0;}
@@ -62,6 +66,7 @@ button:focus {outline:0;}
         height: 500px;
     }
 }
+
 @media print, screen and (min-width: 64em) {
     .banner {
         height: 600px;
@@ -99,6 +104,131 @@ button:focus {outline:0;}
     border: 1px solid #ccc;
     border-radius: 45px;
     margin: 1rem auto 2rem auto;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.callout {
+    box-shadow: 0px 0px 4px 0px #ccc;
+}
+
+.callout.small {
+    padding: 2em 2em 2em 2em;
+}
+
+.price-box h2 {
+    font-size: 60px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.price-box span.small {
+    font-size: 30px;
+}
+
+.small-divider {
+    background-color: #1d1e1f;
+    align-self: center;
+    text-align: center;
+}
+
+.button.warning:hover, .button.warning:focus {
+    background-color: #D4CA31;
+    color: #fff;
+}
+
+.button.warning {
+    background-color: #D4B92E;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+.button.warning.icon {
+    background-color: transparent;
+    color: #D4B92E;
+    font-size: 22px;
+    border-radius: 0%;
+    padding: 1rem 1rem;
+}
+
+.button.warning.icon:hover, .button.warning.icon:focus {
+    background-color: transparent;
+    color: #D4CA31;
+}
+
+.floating-block {
+    right: 0;
+}
+
+/* Mobile Menu */
+
+.mobile-nav ul{
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+.mobile-nav ul li {
+    padding-bottom: 1em;
+}
+
+.mobile-nav ul li a{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'FlisonProBook';
+}
+
+.mobile-nav ul li a.active{
+    border-left: 5px solid #FFFFFF;
+    padding-left: 1em;
+    margin-left: -43px;
+}
+
+.bottom-menu {
+    bottom: 0;
+    width: 100%;
+}
+
+.mobile-nav .bottom-menu ul{
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+.mobile-nav .bottom-menu ul li {
+    padding-bottom: 1em;
+}
+
+.mobile-nav .bottom-menu ul li a{
+    font-size: 18px;
+    font-family: 'FilsonProRegular';
+}
+
+.mobile-nav .bottom-menu ul li a.active{
+    border-left: 2px solid #FFFFFF;
+    padding-left: 1em;
+}
+
+
+.mobile-nav .user-info {
+    margin: 3em 1em;
+    color: #FFFFFF;
+}
+
+.mobile-nav .user-info p.user-name {
+    margin-bottom: 0px;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.mobile-nav .user-info p.user-profession {
+    font-size: 12px;
+    font-weight: 800;
 }
 
 

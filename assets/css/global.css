@@ -44,8 +44,9 @@ body, ul, ol, a {
 .font-GothamBold {
     font-family: 'GothamBold';
 }
-h1 {
-    font-size: 22px;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'FilsonProBlack';
 }
 
 
@@ -54,8 +55,12 @@ h1 {
 body {
     font-family: 'FilsonProRegular';
     font-size: 14px;
-    background-color: #EdEDEE;
+    background-color: #F4F4F4;
 }
+.spacerhalf {
+    height: 0.5rem;
+}
+
 
 .spacer1 {
     height: 1rem;
@@ -81,22 +86,49 @@ a:hover {
 
 /* Form Styles */
 
-input, select, textarea {
+
+textarea {
+    height: 150px;
+    padding: 0.5em 0.5em 0.5em 0;
+    resize: none;
+}
+
+select {
+    padding: 0.5rem 0.5rem 0.5rem 0;
     border: none !important;
-    border-bottom: 1px solid #3c3c3c !important;
+    border-bottom: 1px solid #CDCDCD !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    color: #050C5D;
+}
+
+input, textarea {
+    border: none !important;
+    border-bottom: 1px solid #CDCDCD !important;
     background: transparent !important;
     box-shadow: none !important;
     border-radius: 0 !important;
     padding: 1rem 1.5rem 1rem 0rem !important;
+    color: #050C5D;
 }
 
-textarea {
-    height: 150px;
+textarea::-moz-placeholder,input::-moz-placeholder {
+    color: #050C5D;
 }
 
-textarea {
-    resize: none;
+textarea::-webkit-input-placeholder,input::-webkit-input-placeholder {
+    color: #050C5D;
 }
+
+textarea::-webkit-input-placeholder,input:-ms-input-placeholder {
+    color: #050C5D;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
 
 /* Ends */
 
@@ -146,4 +178,32 @@ textarea {
     color: #F86500;
 }
 
+.twvele {
+    color : #9A92A9;
+}
+
 /* Ends */
+
+/* Typo Styles */
+
+.vcard {
+    display: inline-block;
+    margin: 0 0 1.11111rem 0;
+    padding: 0.55556rem 0.66667rem 0.55556rem 0;
+    list-style: none;
+    color: #050C5D;
+}
+
+/* Ends */
+
+.relative-item {
+    position: relative;
+}
+
+.absolute-item {
+    position: absolute;
+}
+
+.fixed-item {
+    position: fixed;
+}

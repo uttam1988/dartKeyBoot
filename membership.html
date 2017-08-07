@@ -22,63 +22,79 @@
         </button>
     </div>
 </header>
-<div class="mobile-menu overlay small-11">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="mobile-nav">
-        <ul>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Profiles</a></li>
-            <li><a href="#">Memberships</a></li>
-            <li><a href="#">Solutions</a></li>
-        </ul>
-        <div class="row align-bottom">
-            <ul class="bottom-menu">
-                <li><a href="#">SUPPORT</a></li>
-                <li><a href="#">COMPANY</a></li>
-                <li><a href="#">CONTACT</a></li>
+<div class="mobile-menu overlay">
+    <div class="small-12 columns">
+        <a href="javascript:void(0)" class="closebtn pull-right" onclick="closeNav()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <div class="spacer2"></div>
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Profiles</a></li>
+                <li><a class="active" href="#">Memberships</a></li>
+                <li><a href="#">Solutions</a></li>
             </ul>
-            <div class="row">
-                <div class="small-8 column">User Info</div>
-                <div class="small-4 column"><i class="fa fa-cog fa-3x" aria-hidden="true"></i></div>
+            <div class="fixed-item bottom-menu">
+                <ul>
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="row user-info">
+                    <div class="small-8 column">
+                        <div class="user-icon">
+                            <i class="fa fa-user-circle-o fa-4x pull-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="pull-left">
+                            <p class="user-name">Axytrix</p>
+                            <p class="user-profession">ART DEALER</p>
+                        </div>
+                    </div>
+                    <div class="small-4 column">
+                        <i class="fa fa-cog fa-3x" aria-hidden="true"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="row banner-block shrink">
-    <div class="small-12">
-        <div class="banner"></div>
-    </div>
-</div>
 <div class="content">
     <div class="row align-center about-text ">
+        <h1 class="twvele page-title small-12 text-left columns">memberships.</h1>
         <div class="small-10">
             <div class="text-center">
-                <div class="spacer1"></div>
-                <h2 class="eight">memberships.</h2>
-                <div class="spacer1"></div>
+                <div class="spacer2"></div>
                 <div class="members-slide">
-                    <span class="left-arrow"></span>
+                    <span class="left-arrow arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
                     <img src="assets/images/art-collectors.png" alt="collectors">
-                    <span class="right-arrow"></span>
+                    <span class="right-arrow arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="spacer2"></div>
+                <p class="medium-4 medium-offset-4">Keep track of your collection and authenticate the provenance</p>
+                <div class="spacer1"></div>
+                <div class="row">
+                    <div class="small-12 medium-6 medium-offset-3 columns align-middle">
+                        <div class="callout small price-box">
+                            <h2>
+                                <span class="small">$</span>2.99<br>
+                            </h2>
+                            <span>/user/month</span>
+                            <div class="spacer1"></div>
+                            <p class="first">Record one artist profile and up to 100 artworks</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="spacer1"></div>
-                <p>Keep track of your collection and authenticate the provenance</p>
-                <div class="spacer1"></div>
-                <div class="callout small">
-                    <h5>This is a small callout</h5>
-                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
-                    <a href="#">It's dangerous to go alone, take this.</a>
-                </div>
-                <div class="spacer1"></div>
-                <button type="button" class="warning button">Signup</button>
+                <button type="button" class="warning button">sign up</button>
             </div>
         </div>
     </div>
 </div>
 
-<footer class="row hide-for-small-only">
+<footer class="row hide-for-small-only shrink">
     <div class="medium-3 medium-offset-1">
-        <h4>OUR PRODUCTS.</h4>
+        <h5>OUR PRODUCTS.</h5>
         <ul class="list-group">
             <li><a href="#">d.key</a></li>
             <li><a href="#">Support</a></li>
@@ -87,7 +103,7 @@
         </ul>
     </div>
     <div class="medium-3">
-        <h4>MEMBERSHIPS.</h4>
+        <h5>MEMBERSHIPS.</h5>
         <ul class="list-group">
             <li><a href="#">Artists</a></li>
             <li><a href="#">Collectors</a></li>
@@ -96,7 +112,7 @@
         </ul>
     </div>
     <div class="medium-2">
-        <h4>CONTACT US.</h4>
+        <h5>CONTACT US.</h5>
         <address>
             <p>hello@dartkey.com</p>
             <strong>PO Box 1096</strong><br>
@@ -127,12 +143,10 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script>
   function openNav() {
-    $('.menu-button').removeClass('text-right').addClass('text-left');
-    $('.mobile-menu').css('width','85%');
+    $('.mobile-menu').css('width','100%');
   }
 
   function closeNav() {
-    $('.menu-button').removeClass('text-left').addClass('text-right');
     $('.mobile-menu').css('width','0%');
   }
 </script>
