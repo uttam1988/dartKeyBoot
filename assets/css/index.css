@@ -16,9 +16,9 @@ header {
 .logo {
     background-image: url("../images/dartkey-logo.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 70% 100%;
-    width: 150px;
+    background-position: left center;
+    background-size: 100% 100%;
+    height: 50px;
 }
 
 .overlay {
@@ -65,11 +65,19 @@ button:focus {outline:0;}
     .banner {
         height: 500px;
     }
+
+    .page-title {
+        text-align: left !important;
+    }
 }
 
 @media print, screen and (min-width: 64em) {
     .banner {
         height: 600px;
+    }
+
+    .page-title {
+        text-align: left !important;
     }
 }
 
@@ -82,7 +90,8 @@ button:focus {outline:0;}
 }
 
 .about-text p {
-    font-size: 16px;
+    font-size: 20px;
+    margin-top: 1em;
 }
 
 .heading {
@@ -119,14 +128,21 @@ button:focus {outline:0;}
     padding: 2em 2em 2em 2em;
 }
 
-.price-box h2 {
-    font-size: 60px;
+.price-box p.price {
+    font-size: 75px;
+    font-weight: normal;
     margin-bottom: 0;
-    line-height: 1;
+    color: #333;
+    line-height: .5;
 }
 
 .price-box span.small {
-    font-size: 30px;
+    font-size: 45px;
+    vertical-align: top;
+}
+
+.price-box span:last-child {
+    font-size: 25px;
 }
 
 .small-divider {
@@ -231,6 +247,42 @@ button:focus {outline:0;}
     font-weight: 800;
 }
 
+/* Main Menu Styles */
+
+.main-menu nav.upper-nav {
+    margin-bottom: 0.8rem;
+}
+
+.main-menu nav .menu .is-active > a {
+    font-weight: bolder;
+    color: #fefefe;
+    background: transparent;
+}
+
+.main-menu nav.upper-nav ul {
+    margin-right: .5rem;
+}
+
+.main-menu nav.upper-nav li {
+    font-size: 10px;
+}
+
+.main-menu .menu a {
+    padding: 0.5rem 0.5rem 0 0;
+}
+
+.main-menu .menu span {
+    padding: 0.4em 0.8em 0.4em 0.2em;
+    color: #FFFFFF;
+}
+
+.main-menu .login-btn {
+    padding: 0.3em 1em;
+    margin-left: 1em;
+}
+
+/* Ends */
+
 
 
 /* Ends */
@@ -282,8 +334,15 @@ footer {
     padding: 1rem 0 2rem 0;
 }
 
-footer ul {
+footer p.header-title {
+    font-weight: bold;
+    color: #241346;
+    font-size: 14px;
+    margin-bottom: .5rem;
+}
 
+footer address {
+    color: #818186;
 }
 
 footer ul li {
@@ -291,16 +350,29 @@ footer ul li {
 }
 
 footer ul li a{
-    color: #000000;
+    color: #818186;
     text-decoration: none;
 }
 
 footer ul.social-icons {
     margin-top: 1rem;
+    float: right;
 }
 
 footer ul.social-icons li {
     display: inline-flex;
 }
+
+footer ul.social-icons li a {
+    background-color: #AEA4AD;
+    border-radius: 100%;
+    padding: .2em;
+    color: #FFF;
+}
+
+footer ul.social-icons li a:hover {
+    background-color: #241346;
+}
+
 
 

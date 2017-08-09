@@ -14,15 +14,39 @@
     <link href="assets/css/membership.css" rel="stylesheet">
 </head>
 <body>
-<header class="row shrink">
-    <div class="logo medium-3 show-for-medium columns"></div>
-    <div class="columns menu-button text-right">
-        <button onclick="openNav()">
-            <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
-        </button>
+<header class="shrink">
+    <div class="row">
+        <div class="small-3 show-for-medium columns">
+            <div class="logo"></div>
+        </div>
+        <div class="columns menu-button text-right hide-for-medium">
+            <button onclick="openNav()">
+                <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="main-menu show-for-medium small-9 columns">
+            <nav class="upper-nav">
+                <ul class="menu align-right">
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <nav class="main-nav">
+                <ul class="menu align-right">
+                    <li><a href="#">products</a></li><span>/</span>
+                    <li><a href="#">profiles</a></li><span>/</span>
+                    <li class="is-active"><a href="#">memberships</a></li><span>/</span>
+                    <li><a href="#">solutions</a></li>
+                    <li>
+                        <button class="login-btn button warning ">login</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
-<div class="mobile-menu overlay">
+<div class="mobile-menu overlay show-for-small">
     <div class="small-12 columns">
         <a href="javascript:void(0)" class="closebtn pull-right" onclick="closeNav()">
             <i class="fa fa-times" aria-hidden="true"></i>
@@ -61,7 +85,7 @@
 </div>
 <div class="content">
     <div class="row align-center about-text ">
-        <h1 class="twvele page-title small-12 text-left columns">memberships.</h1>
+        <h1 class="twvele page-title small-12 text-center columns">memberships.</h1>
         <div class="small-10">
             <div class="text-center">
                 <div class="spacer2"></div>
@@ -71,17 +95,19 @@
                     <span class="right-arrow arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="spacer2"></div>
-                <p class="medium-4 medium-offset-4">Keep track of your collection and authenticate the provenance</p>
-                <div class="spacer1"></div>
-                <div class="row">
-                    <div class="small-12 medium-6 medium-offset-3 columns align-middle">
+
+                <div class="row align-center">
+                    <p class="small-12 medium-8 columns"">Keep track of your collection and authenticate the provenance</p>
+                    <div class="spacer1"></div>
+                    <div class="small-12 medium-5 columns">
                         <div class="callout small price-box">
-                            <h2>
+                            <p class="price">
                                 <span class="small">$</span>2.99<br>
-                            </h2>
-                            <span>/user/month</span>
+                                <span>/user/month</span>
+                            </p>
+
                             <div class="spacer1"></div>
-                            <p class="first">Record one artist profile and up to 100 artworks</p>
+                            <p class="thirteen">Record one artist profile and up to 100 artworks</p>
                         </div>
                     </div>
                 </div>
@@ -92,49 +118,51 @@
     </div>
 </div>
 
-<footer class="row hide-for-small-only shrink">
-    <div class="medium-3 medium-offset-1">
-        <h5>OUR PRODUCTS.</h5>
-        <ul class="list-group">
-            <li><a href="#">d.key</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Insight</a></li>
-            <li><a href="#">Product Updates</a></li>
-        </ul>
-    </div>
-    <div class="medium-3">
-        <h5>MEMBERSHIPS.</h5>
-        <ul class="list-group">
-            <li><a href="#">Artists</a></li>
-            <li><a href="#">Collectors</a></li>
-            <li><a href="#">Galleries</a></li>
-            <li><a href="#">Art Dealers</a></li>
-        </ul>
-    </div>
-    <div class="medium-2">
-        <h5>CONTACT US.</h5>
-        <address>
-            <p>hello@dartkey.com</p>
-            <strong>PO Box 1096</strong><br>
-            Blackburn North, 3130 VIC<br>
-            Asutralia<br>
-        </address>
-    </div>
-    <div class="medium-2">
-        <ul class="social-icons start-sm">
-            <li>
-                <a href="#"><i class="fa fa-facebook fa-lg fa-fw" aria-hidden="true"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-instagram fa-lg fa-fw" aria-hidden="true"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-pinterest fa-lg fa-fw" aria-hidden="true"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-twitter fa-lg fa-fw" aria-hidden="true"></i></a>
-            </li>
-        </ul>
+<footer class="hide-for-small-only shrink">
+    <div class="row">
+        <div class="small-3 columns">
+            <p class="header-title">OUR PRODUCTS.</p>
+            <ul class="list-group">
+                <li><a href="#">d.key</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Insight</a></li>
+                <li><a href="#">Product Updates</a></li>
+            </ul>
+        </div>
+        <div class="small-3 columns">
+            <p class="header-title">MEMBERSHIPS.</p>
+            <ul class="list-group">
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Collectors</a></li>
+                <li><a href="#">Galleries</a></li>
+                <li><a href="#">Art Dealers</a></li>
+            </ul>
+        </div>
+        <div class="small-3 columns">
+            <p class="header-title">CONTACT US.</p>
+            <address>
+                <p>hello@dartkey.com</p>
+                <strong>PO Box 1096</strong><br>
+                Blackburn North, 3130 VIC<br>
+                Asutralia<br>
+            </address>
+        </div>
+        <div class="small-3 columns">
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><i class="fa fa-facebook fa-lg fa-fw" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram fa-lg fa-fw" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-pinterest fa-lg fa-fw" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter fa-lg fa-fw" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </footer>
 
